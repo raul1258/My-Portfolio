@@ -13,7 +13,7 @@
   
   
   .heading {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
   
   .links {
@@ -27,7 +27,7 @@
     color: var(--grey);
     text-decoration: none !important;
     font-weight: 600;
-    font-size: 1.2rem;
+    font-size: 1rem;
     cursor: pointer;
   }
   .link:hover {
@@ -45,6 +45,64 @@
   
   .drawerDiv {
     display: none;
+  }
+
+  .intro{
+    display: flex;
+    margin-top: 10%;
+    margin-left: 10%;
+  }
+
+  .headingIntro{
+    font-size: 150%;
+    animation: fadein 2s,heading 2s;
+  }
+  
+  .headingIntro span::before {
+    content: "Web Developer";
+    animation: animate infinite 7s;
+    padding-left: 10px;
+  }
+  
+  @keyframes animate {
+  
+    0% {
+        content: "Student";
+    }
+  
+    25% {
+      content: "FrontEnd Developer";
+    }
+  
+    50% {
+        content: "Investor";
+    }
+  
+    75% {
+  
+        content: "App Developer";
+    }
+    100% {
+  
+      content: "Student";
+  }
+  }
+  
+  .btn{
+    padding:10px;
+    background-color: var(--blue);
+    color:#fff;
+    border-radius:40px;
+    border:1px solid var(--blue);
+    box-shadow: 0 3px 5px var(--blue);
+    width:160px;
+    height:45px;
+    font-size: 101%;
+    font-family: "EBGaramondRegular";
+    margin:20px;
+    margin-left:0px;
+    transition: transform 0.5s ease-in-out;
+    cursor:pointer;
   }
   
   @media only screen and (max-width: 800px) {
