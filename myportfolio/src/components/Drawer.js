@@ -17,14 +17,18 @@ function MobileDrawer() {
     <Drawer anchor={"right"} open={open} onClose={() => setOpen(false)}>
       <div className="drawer">
         <a href="/">
-          <p className="link">Home</p>
+          <p className="link">About</p>
         </a>
-        <a href="/compare">
-          <p className="link">Compare</p>
+        <a href="/skills">
+          <p className="link">Skills</p>
         </a>
-        <a href="/dashboard">
-          <p className="link">Dashboard</p>
+        <a href="/projects">
+          <p className="link">Projects</p>
         </a>
+        <a href="/socials">
+          <p className="link">Socials</p>
+        </a>
+        
       </div>
     </Drawer>
     </div>

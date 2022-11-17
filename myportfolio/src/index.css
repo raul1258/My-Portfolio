@@ -29,24 +29,3 @@ a{
   text-decoration: none;
 }
 
-::selection {
-  color: var(--white);
-  background-color: var(--blue);
-}
-
-
-/* width */
-::-webkit-scrollbar {
-  width: 0.2rem;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  background: var(--black);
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: var(--blue);
-  border-radius: 1rem;
-}
