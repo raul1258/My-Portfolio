@@ -1,13 +1,10 @@
 import Header from "./components/header";
-import Intro from "./components/Intro";
+// import Intro from "./components/Intro";
 
 function App() {
   return (
     <div className="App">
-     <Header/>
-     <div>
-      <Intro/>
-     </div>
+    <Header/>
     </div>
   );
 }
