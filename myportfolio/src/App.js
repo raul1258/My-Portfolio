@@ -1,10 +1,16 @@
+import AboutMe from "./components/AboutMe";
 import Header from "./components/header";
-// import Intro from "./components/Intro";
+import Intro from "./components/intro";
 
 function App() {
   return (
     <div className="App">
-    <Header/>
+      <Header/>
+      <div className="container">
+        <Intro/>
+        <AboutMe/>
+      </div>
+      
     </div>
   );
 }

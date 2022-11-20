@@ -8,6 +8,14 @@
     height: auto;
     border-bottom: 1px solid var(--grey);
 }
+.container{
+    width: 70%;
+    margin-top: 10%;
+    max-width: 1300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 .heading{
     font-size: 2rem;
 }
@@ -48,6 +56,141 @@ span{
   }
 
 
+/* intro page css */
+  .intro{
+    margin-top: 10%;
+    
+    display: flex;
+    
+  
+  }
+  
+
+  .headingIntro{
+    font-size: 150%;
+    animation: fadein 2s,heading 2s;
+  }
+  
+  .headingIntro span::before {
+    content: "Web Developer";
+    animation: animate infinite 7s;
+    padding-left: 10px;
+  }
+  
+  @keyframes animate {
+  
+    0% {
+        content: "Student";
+    }
+  
+    25% {
+      content: "Web Developer";
+    }
+  
+    50% {
+        content: "Investor";
+    }
+  
+    75% {
+  
+        content: "App Developer";
+    }
+    100% {
+  
+      content: "Student";
+  }
+  }
+  .btn{
+    padding:10px;
+    background-color: var(--blue);
+    color:#fff;
+    border-radius:40px;
+    border:1px solid var(--blue);
+    box-shadow: 0 3px 5px var(--blue);
+    width:160px;
+    height:45px;
+    font-size: 101%;
+    font-family: "EBGaramondRegular";
+    margin:20px;
+    margin-left:0px;
+    transition: transform 0.5s ease-in-out;
+    cursor:pointer;
+  }
+  
+  .btn:hover{
+    transform: scale(1.035);
+    background-color: #fff;
+    color:#333;
+    border:1px solid #fff;
+    box-shadow: 0 3px 10px lightblue;
+    transition:0.5s;
+  }
+  
+  .btn2{
+    padding:10px;
+    background-color: #fff;
+    color:#333;
+    border-radius:40px;
+    border:1px solid #fff;
+    box-shadow: 0 3px 10px lightblue;
+    width:160px;
+    font-family: "EBGaramondRegular";
+    font-size: 101%;
+    margin:20px;
+    margin-left:0px;
+    height:45px;
+    cursor:pointer;
+  }
+  
+  .btn2:hover
+  {
+    transform: scale(1.035);
+    background-color: var(--blue);
+    color:#fff;
+    border-radius:40px;
+    border:1px solid var(--blue);
+    box-shadow: 0 3px 5px var(--blue);
+    transition:0.5s;
+  
+  }
+  .imageIntro{
+    width: 50%;
+  }
+  .pic1{
+    width: 120%;
+    border-radius: 2rem;
+    transition: transform 1.2s ease-in-out;
+    cursor: pointer;
+  }
+  .pic1:hover{
+    transform:rotate(2deg) scale(1.015);
+   
+   }
+   
+   .Card{
+    transition:0.5s;
+    box-shadow: 2px 2px 5px lightgrey;
+  }
+  
+  .Card:hover{
+    transform: rotate(-1deg) scale(1.015);
+    box-shadow: 2px 2px 5px rgb(230, 147, 76);
+  }
+  
+   .dp{
+    border-radius: 100%;
+    object-fit: cover;
+    width:100px;
+    height:100px;
+  }
+  
+  .aboutMe{
+    text-align: center;
+    width:100%;
+    padding:20px;
+  }
+    
+
   
 @media only screen and (max-width: 600px) {
     .drawerDiv{
@@ -57,4 +200,11 @@ span{
     .links{
         display: none;
     }
+  
+
+}
+@media only screen and (max-width: 800px) {
+  .intro{
+    flex-direction: column;
+  }
 }
