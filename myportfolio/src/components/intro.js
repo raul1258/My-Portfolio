@@ -1,6 +1,7 @@
 import React from 'react'
 import pic1 from "../assets/img1.jpg"
 import pic2 from "../assets/pp.jpeg"
+import pic3 from "../assets/iphoneAnonimo.png"
 
 
 function intro() {
@@ -13,9 +14,10 @@ function intro() {
             <div className="hiddenText">
                             <p  style={{color:"#000",opacity:0.5 }}>Hey There! I am Rahul Jaiswal - A Self Taught Web Developer. Welcome to my Professional Portfolio.</p>
             </div>
-            <div>
+        <div className='btn-set'>
           <button className="btn">Connect Now</button>
           <button className="btn2">My Projects</button>
+        </div>  
 
           <div className="Card" style={{display:"flex",flexDirection:"column",marginTop:30,border:"2px solid lightgrey",borderRadius:10}}> 
                        
@@ -28,7 +30,7 @@ function intro() {
                         </div>
                     </div>
             </div>   
-        </div>
+        
           <div className='imageIntro'>
             <img src={pic1} className="pic1"></img>
             

@@ -23,9 +23,7 @@ function header() {
 
     </div>
 
-        <Drawer/>
-        
-      
+        <Drawer/> 
       
     </div>
   )
